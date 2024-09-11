@@ -1,5 +1,5 @@
 {
-  "name":"FLASH-MD",
+  "name":"kushan",
   "description":"An easy and simple WhatsApp bot developed by France King",
   "keywords":[
     "bot",
@@ -22,7 +22,7 @@
       "AUTO_REACTION":
     {
       "description":"Put on if you want the bot to react to people's messages.It won't react to your messages and those from creator France King.", 
-      "value":"off", 
+      "value":"on", 
       "required":false 
     }, 
     "AUTO_READ_MESSAGES":
@@ -39,8 +39,8 @@
     }, "AUTO_SAVE_STATUS":
     {
       "description":"Your contact status will be download automatically and send to you(type yes to active or no to deactive ; don't write in capital letter)",
-      "value":"off",
-      "required":false
+      "value":"on",
+      "required":true
     }
     ,
      "PM_PERMIT" :
@@ -54,14 +54,14 @@
 
       "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
       "value":"https://telegra.ph/file/dfccbf12397757c321ac4.jpg",
-      "required":false
+      "required":true
 
      },
     "BOT_MODE":
     {
       "description":"put private  to put your bot on private mode or public to put it on public mod",
-      "value":"private",
-      "required":false
+      "value":"public",
+      "required":true
     }
         ,
     "HEROKU_API_KEY": {
@@ -76,7 +76,7 @@
     "SESSION_ID":
     {
       "description":"put your session ID , make sure it starts with FLASH-MD-WA-BOT...",   
-      "value":"",
+      "value":"FLASH-MD-WA-BOT;;;=>eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiWUtIUUFJN0svbjQ4alAyUGZFTHVwTVJ0WVl0dEFha3NBMUVpNWJtUXczOD0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiU0c1RmRLSElBTlpialRhNy9GaWJiWDJORUdxR3AySGVzbzhqK1p6QUZEVT0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJBS1YwQ2NpVmxiemdqRlI2Q2lyR0pNWXk0N01qNThqWmZSQXB3bitMMjEwPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiI4dzM3K0ZEQnBwWmZHYlpTdFV6SW5zVkJPMktLRzhPc1haRDNDRGp3SlhVPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Ik1OdDkzNkVCaGJVRmF6TllXK0VHaGxLWkhpMmtXY05PdkRkM2MwdW5pWDQ9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkUzUzJrZmVtRHlpOGx2ZTJ5alZGMHFZY2dhK3J0UlVYQjV2ajBGdVJibjg9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiS0JjbUpHOVd1LzlZb3NSZWE5d2lUOUNBbFpOZnNqM3JUdFk3RjBEWnJFTT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiSXVtc3FqNzlQRHplT0lIamhxckxqMlhzSVFzaGdVUFdYcndDVkFRM3drOD0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6InNPclhOeDBpS0dNa3FYUytvLzZSaEc4aEhTYzVRQWFQa0doV0RORG9JVDJDczZHY0hPR0x1MS9uR3ZpdmpGTGhhZXZ1dWpoM05HR0xPTHUxMkxGTGhnPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MTEwLCJhZHZTZWNyZXRLZXkiOiJ1cTluM0NYNnMrMlRGU3I1LzRrdjlydjVURUF3VDV1ZnphZmZzYnA3VktFPSIsInByb2Nlc3NlZEhpc3RvcnlNZXNzYWdlcyI6W10sIm5leHRQcmVLZXlJZCI6MzEsImZpcnN0VW51cGxvYWRlZFByZUtleUlkIjozMSwiYWNjb3VudFN5bmNDb3VudGVyIjowLCJhY2NvdW50U2V0dGluZ3MiOnsidW5hcmNoaXZlQ2hhdHMiOmZhbHNlfSwiZGV2aWNlSWQiOiJJODB1b2ZIb1MwbTFuYlkwQU95b3R3IiwicGhvbmVJZCI6ImM0MDZiMGNhLWIxM2QtNDczNi1hZWQxLWViNThjYWUyNTIzZCIsImlkZW50aXR5SWQiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiIyS2UvbUNoemhGSUhEaHdZdW0zNnRkYVJrY0k9In0sInJlZ2lzdGVyZWQiOnRydWUsImJhY2t1cFRva2VuIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiUTltaUlRODRnMTQ0MmNUWVplMWMvRERTNm9RPSJ9LCJyZWdpc3RyYXRpb24iOnt9LCJwYWlyaW5nQ29kZSI6IjNHWlg5N0hLIiwibWUiOnsiaWQiOiI5NDcwNTM3Njg2Mzo3NUBzLndoYXRzYXBwLm5ldCJ9LCJhY2NvdW50Ijp7ImRldGFpbHMiOiJDTnpMNnFRQkVPNm5oYmNHR0FFZ0FDZ0EiLCJhY2NvdW50U2lnbmF0dXJlS2V5IjoiK3NsSVdEcHJxSGxaa0YzYXJvYUp6ZFJkYVkrSk9NajkzVTdDTFpMWjJRQT0iLCJhY2NvdW50U2lnbmF0dXJlIjoiZWM3VnhBMm84SUhBa2w0ODdkYzVuY2w1UDJmZzRBTHFOZlI4RWdDUHJYZlJxMlJ1YkxVUTlwQ2sraS9XTGtkTXdTWnE5RHgxNllYOFp0cTR2b1hhQ0E9PSIsImRldmljZVNpZ25hdHVyZSI6ImEyMnNuNE5LRFduNm5LeTY0ZTc3UC96czhKM0ZCSWsxZVdzQTF1T3JlT2RQanFocHlsOFVTTzRaOHc2Y1dzY09rQUZxY29XUkg2RHVmM2E2OFdBQ2lRPT0ifSwic2lnbmFsSWRlbnRpdGllcyI6W3siaWRlbnRpZmllciI6eyJuYW1lIjoiOTQ3MDUzNzY4NjM6NzVAcy53aGF0c2FwcC5uZXQiLCJkZXZpY2VJZCI6MH0sImlkZW50aWZpZXJLZXkiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJCZnJKU0ZnNmE2aDVXWkJkMnE2R2ljM1VYV21QaVRqSS9kMU93aTJTMmRrQSJ9fV0sInBsYXRmb3JtIjoiYW5kcm9pZCIsImxhc3RBY2NvdW50U3luY1RpbWVzdGFtcCI6MTcyNjA0MzEzMSwibXlBcHBTdGF0ZUtleUlkIjoiQUFBQUFGYzMifQ==",
       "required": true
 
     },
